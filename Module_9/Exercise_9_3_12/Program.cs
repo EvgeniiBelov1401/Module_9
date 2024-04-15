@@ -9,12 +9,11 @@
         //}
         static void Main(string[] args)
         {
-            string Message = "Hello World!";
             ShowMessageDelegate showMessageDelegate = delegate (string _message)
             {
                 Console.WriteLine(_message);
             };
-            showMessageDelegate.Invoke(Message);
+            showMessageDelegate.Invoke("Hello World!");
         }
     }
 }
