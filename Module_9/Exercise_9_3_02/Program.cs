@@ -13,8 +13,9 @@ namespace Exercise_9_3_02
         {
             SubtractionDelegate subtractionDelegate = Subtraction;
 
-            int result = subtractionDelegate.Invoke(50,20);
-            Console.WriteLine(result);  
+            int result1 = subtractionDelegate.Invoke(50,20);
+            int result2 =subtractionDelegate(40,30);
+            Console.WriteLine(result1+"\n"+result2);  
             
         }
     }
